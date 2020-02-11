@@ -55,7 +55,10 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\gravidade.cs" />
      <Compile Include="Assets\Scripts\movimentarJogador.cs" />
+     <Compile Include="Assets\Scripts\Pegar.cs" />
      <Compile Include="Assets\Scripts\PlanetScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <None Include="Assets\Fonts\OpenSans\License!.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/danil/Documents/SnakeWorld/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

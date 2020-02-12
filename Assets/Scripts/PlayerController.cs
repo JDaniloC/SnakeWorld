@@ -1,16 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
     [SerializeField]
     public GameObject calda;
     public int velocidade;
+    public Text texto;
     private List<Rigidbody> nos;
     public static string direction;
     public static bool criarNovoNo;
-    public static int pontos;
+    public int pontos;
     private Rigidbody cabecaPrincipal;
     private Rigidbody corpoPrincipal;
     private Transform tr;
@@ -25,6 +27,7 @@ public class PlayerController : MonoBehaviour
        iniciarNos(); 
        iniciarJogador();
        posicaoDaCabeca = nos[0].position;
+       texto = GameObject.Find("Filhos").GetComponent<Text>();
     }
 
     void iniciarNos() 
@@ -92,6 +95,10 @@ public class PlayerController : MonoBehaviour
 
     void adicionarNo() {
         criarNovoNo = false;
+
+        pontos ++;
+
+        texto.text = "Recued sons: " + pontos;
 
         GameObject novo = Instantiate(calda, nos[nos.Count - 1].position + new Vector3(0.2f * 2, 0f, 0f), Quaternion.identity);
 

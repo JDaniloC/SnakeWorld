@@ -9,8 +9,8 @@ public class Pegar : MonoBehaviour
     {
         if (outro.gameObject.tag == "Reward")
         {
-            PlayerController.pontos += 10;
             PlayerController.criarNovoNo = true;
+            Spawn.todos.Remove(outro.transform.position);
             Destroy(outro.gameObject);
         }
     }

@@ -1,17 +1,17 @@
 # SnakeWorld
-Projeto desafio, criando um jogo da cobrinha em Unity3D (uma engine que nunca usada), em apenas um dia sem ajuda.
+Challenge project, creating a snake game in Unity3D (an engine never used by me), in just a day without help
 
 <img src='.github/image.png'>
 
 ## PARA JOGAR:
-    Abra a pasta BUILD e execute o "SnakeWorld.exe"
+    Open the folder BUILD and execute the "SnakeWoruld.exe"
 
 ### O que foi feito
 
-- [x] Manipulação dos primeiros objetos 3D
-- [x] Manipulação um globo com gravidade
-- [x] Implementação rudimentar para spawn
-- [x] Uma seta que aponta para o novo spawn
-- [x] Manipulação rudimentar de um HUD com contador de nós
+- [x] Manipulation of the first 3D objects
+- [x] Manipulation of a globe with gravity
+- [x] Rudimentary implementation of Spawn
+- [x] An arrow that points to the newer spawn's
+- [x] Rudimentary manipulation of a HUD with node count
 
 <img src='.github/img.png'>
